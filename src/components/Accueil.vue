@@ -135,9 +135,12 @@
         </div>
       </div>
     </div>
-    <div style="background-color: #0d0256; height:812px;" >
-    <div class="element3designdown"/>
-
+    <div style="background-color: #0d0256; height: 812px;">
+      <div class="element3designdown" />
+      <div class="flex">
+        <buttontemplate class="pink" content="Je rejoins le Club" />
+      </div>
+      <hr />
     </div>
   </div>
 </template>
@@ -206,7 +209,7 @@ export default {
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 10px 25px 25px 25px;
+  border-radius: 25px 25px 10px 25px;
 }
 .talkbubbleright p {
   display: table-cell;
@@ -247,7 +250,7 @@ export default {
 .element3designdown {
   width: 100%;
   height: 50px;
-  background-color: #FF006E;
+  background-color: #ff006e;
   background-size: cover;
   clip-path: polygon(0% 60%, 100% 0%, 0% 0%);
 }
@@ -309,5 +312,10 @@ export default {
 .phone {
   height: 100px;
   width: auto;
+}
+hr {
+  background-color: #3d3779;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 </style>
