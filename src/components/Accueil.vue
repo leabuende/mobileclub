@@ -6,7 +6,7 @@
         <kinesis-container class="displayPhones" event="scroll">
           <kinesis-element
             tag="img"
-            :strength="300"
+            :strength="150"
             type="translate"
             axis="y"
             :originY="80"
@@ -16,7 +16,7 @@
           </kinesis-element>
           <kinesis-element
             tag="img"
-            :strength="-300"
+            :strength="-200"
             type="translate"
             axis="y"
             :originY="80"
@@ -102,26 +102,43 @@
     <div class="flex">
       <buttontemplate class="blue" content="Je m'offre la tranquilité" />
     </div>
-    <div style="background-color: #0d0256;">
+    <div style="background-color: #0d0256; padding-bottom: 20px;">
       <div class="elementdesignup"></div>
 
       <div class="element2">
-        <div class="elementside" style="width:440px;">
+        <div class="elementside" style="width: 440px;">
           <text-template
             title="Sans engagement"
             textcolor="whitefont"
             content="Vous pouvez changer ou rendre votre smartphone à tout moment, sans frais."
           />
-        
         </div>
         <div class="flex">
-        <buttontemplate
-          class="pink"
-          content="Je m'offre la liberté"/>
+          <img class="phoneinpocket" src="../assets/img/phoneinpocket.png" />
+        </div>
+        <div class="flex">
+          <buttontemplate class="pink" content="Je m'offre la liberté" />
         </div>
       </div>
     </div>
-    <div class="elementdesigndown"></div>
+    <div style="background-color: #ff006e; width: 100%;">
+      <div class="elementdesigndown"></div>
+      <div class="elementside">
+        <div class="talkbubbleleft"><p>T’achètes des DVD ?</p></div>
+      </div>
+      <div class="elementrightside">
+        <div class="talkbubbleright"><p>Bah non, j’ai Netflix… 😜</p></div>
+      </div>
+      <div class="elementside">
+        <div class="talkbubbleleft">
+          <p>Alors pourquoi t'achètes encore ton smartphone ?</p>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #0d0256; height:812px;" >
+    <div class="element3designdown"/>
+
+    </div>
   </div>
 </template>
 
@@ -159,9 +176,59 @@ export default {
 </script>
 
 <style scoped>
+.talkbubbleleft {
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #0d0256;
+  margin-left: 30px;
+  color: white;
+  padding-left: 20px;
+  display: table;
+  text-align: center;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px 25px 25px 10px;
+}
+.talkbubbleright {
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #ffffff;
+  margin-left: 30px;
+  color: #0d0256;
+  padding-left: 20px;
+  display: table;
+  text-align: center;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px 25px 25px 25px;
+}
+.talkbubbleright p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.talkbubbleleft p {
+  display: table-cell;
+  vertical-align: middle;
+}
 .elementside {
   display: flex;
   justify-content: flex-start;
+}
+
+.elementrightside {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.phoneinpocket {
+  height: 300px;
+  width: auto;
 }
 .body {
   background-color: #f7f9fa;
@@ -174,6 +241,13 @@ export default {
   width: 100%;
   height: 50px;
   background-color: #0d0256;
+  background-size: cover;
+  clip-path: polygon(0% 60%, 100% 0%, 0% 0%);
+}
+.element3designdown {
+  width: 100%;
+  height: 50px;
+  background-color: #FF006E;
   background-size: cover;
   clip-path: polygon(0% 60%, 100% 0%, 0% 0%);
 }
