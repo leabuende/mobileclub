@@ -37,8 +37,24 @@ font-weight: bolder;
 
 .pink{
     background-color: #FF398D;
-    width:188px;
+    width:200px;
     margin-top: 20px;
+    padding-left:5px;
+    padding-right:5px;
+
+    -moz-box-shadow:    inset 0 0 10px  rgb(250, 126, 180);
+   -webkit-box-shadow: inset 0 0 10px rgb(250, 126, 180);
+   box-shadow:         inset 0 0 10px rgb(250, 126, 180);
+    
+
+}
+.blue{
+    background-color: #5B46F3;
+    width:240px;
+    margin-top: 20px;
+    -moz-box-shadow:    inset 0 0 10px rgb(120, 99, 252);
+   -webkit-box-shadow: inset 0 0 10px rgb(120, 99, 252);
+   box-shadow:         inset 0 0 10px rgb(120, 99, 252);
     
 
 }

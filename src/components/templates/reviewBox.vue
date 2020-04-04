@@ -41,7 +41,6 @@ export default {
     -webkit-box-shadow: 0 8px 6px -6px grey;
 	-moz-box-shadow: 0 8px 6px -6px grey;
 	box-shadow: 0 8px 10px -6px grey;
-    margin-bottom: 30px;
 }
 .comment{
     color:#0D0256;
