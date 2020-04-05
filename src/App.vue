@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Accueil/>
+    <Accueil class=Accueil></Accueil>
   </div>
 </template>
 
@@ -26,6 +26,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   
   
+}
+.Accueil{
+  width:100%;
 }
 
 *{
