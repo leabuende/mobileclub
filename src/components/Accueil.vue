@@ -107,7 +107,7 @@
       <div class="elementdesignup"></div>
 
       <div class="element2">
-        <div class="elementside" style="width: 440px;">
+        <div class="elementside" style="width: 100%;">
           <text-template
             title="Sans engagement"
             textcolor="whitefont"

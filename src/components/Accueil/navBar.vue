@@ -13,7 +13,9 @@
     </div>
 
     <div class="navdisplay">
-      <div class="menu d-xs-block d-sm-block d-md-block d-lg-none flex-md-fill flex-row">
+      <div
+        class="menu d-xs-block d-sm-block d-md-block d-lg-none flex-md-fill flex-row"
+      >
         <p @click="openNav">☰</p>
       </div>
       <div class="navbar col-sm-2 offset-md-0">
@@ -22,6 +24,7 @@
           ><span class="brand">club</span></a
         >
       </div>
+
       <div class="linkbar">
         <div class="d-xs-none d-sm-none d-lg-block d-md-none">
           <div class="links"><span>Nos smartphones</span></div>
@@ -74,11 +77,8 @@ a {
   align-items: flex-end;
   margin-left: 10px;
   margin-right: 10px;
+}
 
-}
-.empty {
-  width: 22px;
-}
 .menu {
   font-size: 30px;
   color: #ffffff;
@@ -107,8 +107,6 @@ a {
 }
 .navbar {
   display: flex;
-
-
 }
 .brand {
   color: #ffffff;
@@ -156,17 +154,16 @@ a {
   display: flex;
   flex-direction: row;
   width: 50%;
-
 }
 
-.memberaccess{
-    border: solid white;
-     color: white;
-     height: 58px;
-     line-height: 58px;
-     vertical-align: center;
-     text-align: center;
-     border-radius: 35px;
+.memberaccess {
+  border: solid white;
+  color: white;
+  height: 58px;
+  line-height: 58px;
+  vertical-align: center;
+  text-align: center;
+  border-radius: 35px;
 }
 
 @media (min-width: 992px) {
@@ -178,21 +175,19 @@ a {
     display: flex;
     transition: 0.3s;
     width: 170px;
-    height:58px;
-    line-height:58px;
+    height: 58px;
+    line-height: 58px;
     text-align: center;
     vertical-align: center;
-   
   }
-  
 
   .connectButton {
     width: 60px;
   }
 }
-@media (max-width: 372px){
-      .linkbar{
-          display: none;
-      }
+@media (max-width: 372px) {
+  .linkbar {
+    display: none;
   }
+}
 </style>
