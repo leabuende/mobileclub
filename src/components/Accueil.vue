@@ -310,8 +310,8 @@ export default {
   justify-content: center;
 }
 .image img {
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 100px;
 }
 
 .phone {
