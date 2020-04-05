@@ -14,7 +14,7 @@
             :src="phone"
           >
           </kinesis-element>
-          <div style="width:30%" class="d-xs-none d-sm-none d-md-none d-lg-block"></div>
+           <div style="width:30%" class="d-xs-none d-sm-none d-md-none d-lg-block"></div>
           <kinesis-element
             tag="img"
             :strength="-200"
@@ -310,7 +310,7 @@ export default {
   justify-content: center;
 }
 .image img {
-  width: 145px;
+  width: 30%;
   height: auto;
 }
 
