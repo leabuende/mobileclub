@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="topdesign"></div>
-    <textTemplate class="templates"
+    <textTemplate
       title="Louer c'est la vie!"
       content="Il n’y a qu’à voir les avis et témoignages laissés par nos membres."
     />
