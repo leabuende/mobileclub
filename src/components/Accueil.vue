@@ -14,7 +14,10 @@
             :src="phone"
           >
           </kinesis-element>
-           <div style="width:30%" class="d-xs-none d-sm-none d-md-none d-lg-block"></div>
+          <div
+            style="width: 30%;"
+            class="d-xs-none d-sm-none d-md-none d-lg-block"
+          ></div>
           <kinesis-element
             tag="img"
             :strength="-200"
@@ -47,8 +50,11 @@
       title="Louer c'est la vie!"
       content="Il n’y a qu’à voir les avis et témoignages laissés par nos membres."
     />
-    <carousel class="d-none d-md-none d-sm-block d-xs-block" style="margin-bottom: 30px;">
-      <slide class="col-10" style="height: 250px;"
+
+    <carousel
+      class="d-none d-md-none d-sm-block d-xs-block"
+      style="margin-bottom: 30px; padding-left: 10px; ">
+      <slide style="height: 250px; margin-right: 10px;"
         ><reviewBox
           reviewName="Zine-Eddine "
           date="17/04/2019"
@@ -56,7 +62,7 @@
           content="L'échange s'est parfaitement déroulé, j'ai reçu mon nouvel iPhone avec un bon de retour pour renvoyer l'ancien [...], tout est parfait !"
         />
       </slide>
-      <slide class="col-10"
+      <slide style="height: 250px; margin-right: 10px;"
         ><reviewBox
           reviewName="Zine-Eddine "
           date="17/04/2019"
@@ -64,7 +70,7 @@
           content="L'échange s'est parfaitement déroulé, j'ai reçu mon nouvel iPhone avec un bon de retour pour renvoyer l'ancien [...], tout est parfait !"
         />
       </slide>
-      <slide class="col-10"
+      <slide style="height: 250px; margin-right: 10px;"
         ><reviewBox
           reviewName="Zine-Eddine "
           date="17/04/2019"
@@ -164,7 +170,7 @@ export default {
     textTemplate,
     reviewBox,
     Carousel,
-    Slide,
+    Slide
   },
   data() {
     return {
@@ -172,7 +178,7 @@ export default {
       phone2: require("../assets/img/iphone2.png"),
       buttonpink: {
         text: "Je rejoins le Club",
-        color: "pink",
+        color: "pink"
       },
     };
   },
@@ -180,8 +186,8 @@ export default {
 </script>
 
 <style scoped>
-.templates{
-    width:100%;
+.templates {
+  width: 100%;
 }
 .talkbubbleleft {
   margin-bottom: 40px;
@@ -227,7 +233,6 @@ export default {
   display: flex;
   justify-content: flex-start;
 }
-
 .elementrightside {
   display: flex;
   justify-content: flex-end;
@@ -241,7 +246,7 @@ export default {
   background-color: #f7f9fa;
 }
 .top {
-    padding-top:15px;
+  padding-top: 15px;
   background-color: #0d0256;
   padding-bottom: 30px;
 }
@@ -259,7 +264,6 @@ export default {
   background-size: cover;
   clip-path: polygon(0% 60%, 100% 0%, 0% 0%);
 }
-
 .elementdesigndown {
   width: 100%;
   height: 50px;
@@ -311,9 +315,8 @@ export default {
 }
 .image img {
   width: auto;
-  height: 100px;
+  height: 250px;
 }
-
 .phone {
   height: 100px;
   width: auto;
@@ -324,28 +327,32 @@ hr {
   margin-left: 30px;
 }
 
-@media (min-width: 992px){
-    .top{
-        height:690px;
-    }
-    .main{
-        font-size: 100px;
-        line-height: 1;
-        margin-bottom:10px;
-    }
-    .title{
-        width:700px;
-        text-shadow: 2px 2px 5px black;
-    }
-    .title .price{
-        font-size: 40px;
-         margin-bottom:50px;
-    }
-    .phone{
-        height:400px;
-    }
+@media (min-width: 992px) {
+  .top {
+    height: 690px;
+  }
+  .main {
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .title {
+    width: 700px;
+    text-shadow: 2px 2px 5px black;
+  }
+  .title .price {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .phone {
+    height: 400px;
+  }
+}
 
-
-    
+@media (max-width: 372px) {
+  .image img {
+    height: 100px;
+    width: auto;
+  }
 }
 </style>

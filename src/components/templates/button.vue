@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
 export default {
     name:'buttontemplate',
     props:{
@@ -13,6 +14,7 @@ export default {
         color: String
     }
 }
+
 </script>
 
 <style scoped>
@@ -24,6 +26,7 @@ export default {
     border-radius: 25px;
 
 }
+
 .button .font{
 text-decoration: none;
 font-weight: bolder;
@@ -45,9 +48,8 @@ font-weight: bolder;
     -moz-box-shadow:    inset 0 0 10px  rgb(250, 126, 180);
    -webkit-box-shadow: inset 0 0 10px rgb(250, 126, 180);
    box-shadow:         inset 0 0 10px rgb(250, 126, 180);
-    
-
 }
+
 .blue{
     background-color: #5B46F3;
     width:240px;
