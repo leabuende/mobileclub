@@ -9,14 +9,14 @@
             :strength="150"
             type="translate"
             axis="y"
-            :originY="80"
+            :originY="90"
             class="phone"
             :src="phone"
           >
           </kinesis-element>
           <div
             style="width: 30%;"
-            class="d-xs-none d-sm-none d-md-none d-lg-block"
+            class="d-none d-sm-none d-md-none d-lg-block"
           ></div>
           <kinesis-element
             tag="img"
@@ -37,10 +37,11 @@
             <p class="price">dès 19,90€ /mois</p>
           </div>
         </div>
-        <div class="flex">
+        <div class="flex firstButton">
           <buttontemplate
             :class="buttonpink.color"
             :content="buttonpink.text"
+          
           />
         </div>
       </div>
@@ -186,6 +187,9 @@ export default {
 </script>
 
 <style scoped>
+.firstButton{
+  margin-bottom:10px;
+}
 .templates {
   width: 100%;
 }
@@ -195,7 +199,9 @@ export default {
   font-weight: bolder;
   font-size: 20px;
   background-color: #0d0256;
-  margin-left: 30px;
+  margin-left: 30px;  
+  margin-right: 30px;
+
   color: white;
   padding-left: 20px;
   display: table;
@@ -248,7 +254,7 @@ export default {
 .top {
   padding-top: 15px;
   background-color: #0d0256;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .topdesign {
   width: 100%;
@@ -318,7 +324,7 @@ export default {
   height: 250px;
 }
 .phone {
-  height: 100px;
+  height: 120px;
   width: auto;
 }
 hr {
@@ -329,7 +335,7 @@ hr {
 
 @media (min-width: 992px) {
   .top {
-    height: 690px;
+    min-height: 690px;
   }
   .main {
     font-size: 100px;
@@ -347,6 +353,11 @@ hr {
   .phone {
     height: 400px;
   }
+}
+
+@media (max-width: 600px) {
+  
+
 }
 
 @media (max-width: 372px) {

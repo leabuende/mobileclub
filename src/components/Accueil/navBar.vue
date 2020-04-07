@@ -14,7 +14,7 @@
 
     <div class="navdisplay">
       <div
-        class="menu d-xs-block d-sm-block d-md-block d-lg-none flex-md-fill flex-row"
+        class="menu d-xs-block d-sm-block d-md-block d-lg-none  flex-row"
       >
         <p @click="openNav">☰</p>
       </div>
@@ -24,18 +24,7 @@
           ><span class="brand">club</span></a
         >
       </div>
-
-      <div class="linkbar">
-        <div class="d-xs-none d-sm-none d-lg-block d-md-none">
-          <div class="links"><span>Nos smartphones</span></div>
-        </div>
-        <div class="d-xs-none d-sm-none d-lg-block d-md-none linkbar">
-          <div class="links">Vos questions</div>
-        </div>
-        <div class="d-xs-none d-sm-none d-lg-block d-md-none linkbar">
-          <div class="memberaccess"><span>Accès membre</span></div>
-        </div>
-      </div>
+      <div style="width:44%;"></div>
     </div>
   </div>
 </template>
@@ -73,7 +62,6 @@ a {
 }
 .navdisplay {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   margin-left: 10px;
   margin-right: 10px;
